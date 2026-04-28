@@ -10,6 +10,7 @@ import Register from '@/pages/Register';
 import Dashboard from '@/pages/Dashboard';
 import ListCar from '@/pages/ListCar';
 import MyListings from '@/pages/MyListings';
+import Terms from '@/pages/Terms';
 import './App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/list-car" element={<ListCar />} />
             <Route path="/my-listings" element={<MyListings />} />
+            <Route path="/terms" element={<Terms />} />
           </Routes>
         </main>
         <Toaster

@@ -39,6 +39,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-1">
             <NavLink to="/cars" active={isActive('/cars')}>{t('nav_rent_car')}</NavLink>
             <NavLink to="/list-car" active={isActive('/list-car')}>{t('nav_list_car')}</NavLink>
+            <NavLink to="/terms" active={isActive('/terms')}>{t('nav_terms')}</NavLink>
             {user && (
               <>
                 {user.role === 'admin' && <NavLink to="/dashboard" active={isActive('/dashboard')}>{t('nav_dashboard')}</NavLink>}
@@ -98,6 +99,7 @@ export default function Navigation() {
         <div className="md:hidden px-4 pb-4 flex flex-col gap-2" style={{ borderTop: '1px solid rgba(234,179,8,0.1)' }}>
           <MobileLink to="/cars" onClick={() => setMenuOpen(false)}>{t('nav_rent_car')}</MobileLink>
           <MobileLink to="/list-car" onClick={() => setMenuOpen(false)}>{t('nav_list_car')}</MobileLink>
+          <MobileLink to="/terms" onClick={() => setMenuOpen(false)}>{t('nav_terms')}</MobileLink>
           {user && user.role === 'admin' && <MobileLink to="/dashboard" onClick={() => setMenuOpen(false)}>{t('nav_dashboard')}</MobileLink>}
           {user && user.role === 'owner' && <MobileLink to="/my-listings" onClick={() => setMenuOpen(false)}>{t('nav_my_listings')}</MobileLink>}
           {user && user.role === 'user' && <MobileLink to="/dashboard" onClick={() => setMenuOpen(false)}>{t('nav_my_bookings')}</MobileLink>}
