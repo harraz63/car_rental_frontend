@@ -27,8 +27,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="flex items-center gap-1">
+          <Link to="/" className="flex items-center gap-2 group" dir="ltr">
+            <div className="flex items-center gap-1" dir="ltr">
               <span style={{ fontFamily: 'Cairo, sans-serif', fontWeight: 900, fontSize: '1.5rem', color: '#fff', letterSpacing: '-0.5px' }}>Car</span>
               <span style={{ fontFamily: 'Cairo, sans-serif', fontWeight: 900, fontSize: '1.5rem', background: 'linear-gradient(135deg, #eab308, #f59e0b)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', letterSpacing: '-0.5px' }}>4U</span>
             </div>
